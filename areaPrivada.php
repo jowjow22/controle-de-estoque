@@ -26,7 +26,7 @@ else{
     <span class="navbar-toggler-icon"></span>
   </button>
 
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ">
     	      <li class="nav-item active">
         <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
       </li>
@@ -70,7 +70,7 @@ else{
  		<div class="container-fluid">
  			<div class="row">
  				<div class="col-lg-12">
- 					<h1>Side bar Layouts are cool</h1>
+ 					<h1>EU NAO SEI</h1>
  					<p> i love apple pie i love apple pie i love apple piei love apple piei love apple piei love apple piei love apple piei love apple piei love apple piei love apple piei love apple piei love apple piei love apple piei love apple piei love apple piei love apple piei love apple pie</p>
  				</div>
  			</div>

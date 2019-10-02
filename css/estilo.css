@@ -72,3 +72,9 @@
 .sidebar-nav li a:hover, .sidebar-nav-active li a:hover{
 	background: #16a085;
 }
+.fixed-bottom{
+	width: 60px;
+}
+.navbar-nav {
+	flex-direction: row-reverse;
+}
