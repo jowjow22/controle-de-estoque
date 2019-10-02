@@ -17,48 +17,53 @@ else{
 </head>
 <body class="bg-color">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#" style="font-size: 25px;"id="menu-toggle"><i class="fas fa-bars"></i></a>
+		<a class="text-light ml-1" href="#" style="font-size: 25px;"id="menu-toggle"></i><i class="fas fa-bars"></i></a>
+  	  <a class="navbar-brand ml-5" href="#">
+    <i class="fas fa-store"></i>
+    Bootstrap
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+    <ul class="navbar-nav">
+    	      <li class="nav-item active">
         <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Perfil</a>
-      </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conta
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Lista de saidas</a>
-          <a class="dropdown-item" href="#">Lista de entradas</a>
+          <a class="dropdown-item" href="#">Alterar Dados</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Lista de Estoque</a>
+          <a class="dropdown-item" href="#">Registrar reclamação</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Ver Registros</a>
         </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Cadastro</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-    </form>
-  </div>
 </nav>
  <div id="wrapper">
  	<!-- sidebar -->
  		<div id="sidebar-wrapper">
+ 			<ul class="sidebar-nav-active">
+ 				<li><a href=""><i class="fas fa-chart-bar"></i></a></li>
+ 				<li><a href=""><i class="fas fa-dolly"></i></a></li>
+ 				<li><a href=""><i class="fas fa-truck-loading"></i></a></li>
+ 				<li><a href=""><i class="fas fa-sign-out-alt"></i></i></a></li>
+ 				<li><a href=""><i class="fas fa-cubes"></i></a></li>
+ 				<li><a href=""><i class="fas fa-handshake"></i></a></li>
+ 				<li><a href="" class="fixed-bottom"><i class="fas fa-power-off"></i></a></li>
+ 			</ul>
  			<ul class="sidebar-nav">
  				<li><a href="#">account</a></li>
  				<li><a href="#">Settings</a></li>
  				<li><a href="#">Logout</a></li>
  			</ul>
+
  		</div>
  	<!-- page content -->
  	<div id="page-content-wrapper">

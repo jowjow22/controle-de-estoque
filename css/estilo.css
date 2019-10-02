@@ -11,7 +11,7 @@
 #sidebar-wrapper{
 	z-index: 1;
 	position: absolute;
-	width: 50px;
+	width: 60px;
 	height: 100%;
 	overflow-y: hidden;
 	background: #2c3e50;
@@ -37,26 +37,38 @@
 #wrapper.menuDisplayed #page-content-wrapper{
 	padding-left: 250px;
 }
-#wrapper #sidebar-wrapper ul{
+#wrapper #sidebar-wrapper .sidebar-nav{
 	display: none;
 }
-#wrapper.menuDisplayed #sidebar-wrapper ul{
+#wrapper.menuDisplayed #sidebar-wrapper .sidebar-nav{
 	display: block;
 }
+#wrapper #sidebar-wrapper .sidebar-nav-active{
+	display: block;
+}
+#wrapper.menuDisplayed #sidebar-wrapper .sidebar-nav-active{
+	display: none;
+}
 
-.sidebar-nav{
+.sidebar-nav, .sidebar-nav-active{
 	padding: 0;
 	list-style: none;
+	transition: .5s;
 }
-.sidebar-nav li{
-	text-indent: 20px;
-	line-height: 40px;
+.sidebar-nav li, .sidebar-nav-active li{
+	text-indent: 18px;
+	line-height: 45px;
+	font-size: 20px;
+	transition: .5s;
+
 }
-.sidebar-nav li a{
+.sidebar-nav li a, .sidebar-nav-active li a{
 	display: block;
 	text-decoration: none;
 	color: #ddd;
+	transition: .5s;
+
 }
-.sidebar-nav li a:hover{
+.sidebar-nav li a:hover, .sidebar-nav-active li a:hover{
 	background: #16a085;
 }
