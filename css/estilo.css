@@ -46,7 +46,7 @@
 #wrapper #sidebar-wrapper .sidebar-nav-active{
 	display: block;
 }
-#wrapper.menuDisplayed #sidebar-wrapper .sidebar-nav-active{
+#wrapper.menuDisplayed #sidebar-wrapper .sidebar-nav-active, #wrapper.menuDisplayed #sidebar-wrapper .sidebar-nav-activee{
 	display: none;
 }
 
@@ -54,6 +54,18 @@
 	padding: 0;
 	list-style: none;
 	transition: .5s;
+}
+.sidebar-nav-activee{
+	padding: 0;
+	list-style: none;
+	transition: .5s;
+}
+.sidebar-nav-activee li{
+	text-indent: 18px;
+	line-height: 45px;
+	font-size: 20px;
+	transition: .5s;
+
 }
 .sidebar-nav li, .sidebar-nav-active li{
 	text-indent: 18px;
@@ -69,12 +81,31 @@
 	transition: .5s;
 
 }
+.sidebar-nav-activee li a{
+	display: block;
+	text-decoration: none;
+	color: #ddd;
+	transition: .5s;
+
+}
 .sidebar-nav li a:hover, .sidebar-nav-active li a:hover{
 	background: #16a085;
+}
+.sidebar-nav-activee li a:hover{
+	background: #ff4d4d;
 }
 .fixed-bottom{
 	width: 60px;
 }
 .navbar-nav {
 	flex-direction: row-reverse;
+}
+.sidebar-nav .container-fluid #icons div{
+	border: 1px solid #fff;
+}
+.sidebar-nav .container-fluid #icons{
+	margin: 30px 30px;
+}
+.sidebar-nav .container-fluid #icons div:hover{
+	background: #16a085;
 }

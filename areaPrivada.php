@@ -1,6 +1,17 @@
 <?php
+include_once("json/conexao.php");
 session_start();
 if (isset($_SESSION['cd_usuario'])  && $_SESSION['cd_usuario'] != "") {
+  
+              $sql = 'select * from tb_usuario where cd_usuario = '.$_SESSION['cd_usuario'];
+              $res = $GLOBALS['con']->query($sql);
+              $res2 = $res->fetch_array();
+
+              $sql2 = 'select * from tb_tipoUsuario where cd_tipoUsuario = '.$res2['id_tipoUsuario'];
+              $rest = $GLOBALS['con']->query($sql);
+              $tipo = $res->fetch_array();
+              
+  
 }
 else{
 	echo '<script> window.location = "login.php"; </script>';
@@ -56,12 +67,33 @@ else{
  				<li><a href=""><i class="fas fa-sign-out-alt"></i></i></a></li>
  				<li><a href=""><i class="fas fa-cubes"></i></a></li>
  				<li><a href=""><i class="fas fa-handshake"></i></a></li>
- 				<li><a href="" class="fixed-bottom"><i class="fas fa-power-off"></i></a></li>
+
  			</ul>
+      <ul class="sidebar-nav-activee">
+          <li><a href="#" class="fixed-bottom"><i class="fas fa-power-off"></i></a></li>
+      </ul>
+
  			<ul class="sidebar-nav">
- 				<li><a href="#">account</a></li>
- 				<li><a href="#">Settings</a></li>
- 				<li><a href="#">Logout</a></li>
+        <div class="container-fluid">
+          <div class="row my-5">
+            <div class="col text-center "><img class="rounded-circle" src="img/logo/store.png"></div>
+          </div>
+          <div class="row">
+            <div  class="col text-center mr-1 text-light" style="margin-top: -35px;"><strong><?php echo $res2['nm_usuario']; ?></strong></div>
+          </div>
+          <div class="row" id="icons">
+            <div  class="col text-center "><a href="" class="text-light"><i class="fas fa-envelope"></i></a></div>
+            <div class="col text-center"><a href="" class="text-light"><i class="fas fa-info-circle"></i></a></div>
+            <div class="col text-center"><a href="" class="text-light"><i class="fas fa-power-off  "></i></a></div>
+          </div>
+          <li><a href="" class="text-left"><i class="fas fa-chart-bar"></i><strong class="ml-3">Dashboard</strong></a></li>
+          <li><a href="" class="text-left"><i class="fas fa-dolly"></i><strong class="ml-3">Lotes</strong></a></li>
+          <li><a href="" class="text-left"><i class="fas fa-truck-loading"></i><strong class="ml-3">Entradas</strong></a></li>
+          <li><a href="" class="text-left"><i class="fas fa-sign-out-alt"></i><strong class="ml-3">Saidas</strong></a></li>
+          <li><a href="" class="text-left"><i class="fas fa-cubes"></i><strong class="ml-3">Estoque</strong></a></li>
+          <li><a href="" class="text-left"><i class="fas fa-handshake"></i><strong class="ml-3">Fornecedores</strong></a></li>
+          <div class="dropdown-divider"></div>
+        </div>
  			</ul>
 
  		</div>
